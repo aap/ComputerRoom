@@ -2863,6 +2863,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1656826758278ca4d80cc9d9fee10036, type: 3}
+--- !u!1 &1067495064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -955846405364378313, guid: 467c34772d9ea77429d1e3efa51f4767, type: 3}
+  m_PrefabInstance: {fileID: 2034019152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1068131742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 467c34772d9ea77429d1e3efa51f4767, type: 3}
+  m_PrefabInstance: {fileID: 2034019152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1068131743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068131742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c713f7965e7d5f5ad8d37993a560a1d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_keyboard: {fileID: 1067495064}
+  m_texture: {fileID: 2800000, guid: 88f47098638a4664aac8399317b2b057, type: 3}
+  m_width: 0
+  m_height: 0
 --- !u!1001 &1100668158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3698,7 +3724,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60.3
   orthographic: 0
@@ -3725,14 +3751,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679632623}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: 1.381, z: -1.024}
+  m_LocalRotation: {x: 0.056060247, y: -0.73828894, z: 0.012699797, w: 0.67203087}
+  m_LocalPosition: {x: -3.596, y: 0.9, z: -1.284}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 34
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.4, y: -95.558, z: -3.784}
 --- !u!114 &1679632629
 MonoBehaviour:
   m_ObjectHideFlags: 0
