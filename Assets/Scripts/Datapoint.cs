@@ -18,7 +18,6 @@ public class Datapoint : Terminal
 
 	void Update()
 	{
-		Print(0, 0, 'X');
 		Paint();
 	}
 
@@ -63,9 +62,15 @@ public class Datapoint : Terminal
 			ClearScreen(cursor_x, cursor_y);
 			break;
 		default:
+			if (data < 32 || data > 126)
+				break;
+			if (data == 94)
+				data = 129;
+			if (data == 95)
+				data = 130;
 			if (data >= 96 && data < 127)
 				data -= 32;
-			Print(cursor_x++, cursor_y, Convert.ToChar(data));
+			Print(cursor_x++, cursor_y, data);
 			break;
 		}
 
@@ -75,7 +80,7 @@ public class Datapoint : Terminal
 		{
 			cursor_x = 0;
 			cursor_y++;
-                        if (cursor_y >= 25)
+			if (cursor_y >= 25)
 				Scroll();
 		}
 		if (cursor_y >= 25)
