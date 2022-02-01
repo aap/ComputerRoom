@@ -10,11 +10,11 @@ FBXHeaderExtension:  {
         Version: 1000
         Year: 2022
         Month: 1
-        Day: 29
-        Hour: 12
-        Minute: 49
-        Second: 25
-        Millisecond: 79
+        Day: 31
+        Hour: 21
+        Minute: 15
+        Second: 35
+        Millisecond: 637
     }
     Creator: "FBX SDK/FBX Plugins version 2012.0"
     SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -36,13 +36,13 @@ FBXHeaderExtension:  {
             P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
             P: "Original|ApplicationName", "KString", "", "", "3ds Max"
             P: "Original|ApplicationVersion", "KString", "", "", "2012"
-            P: "Original|DateTime_GMT", "DateTime", "", "", "29/01/2022 11:49:25.079"
+            P: "Original|DateTime_GMT", "DateTime", "", "", "31/01/2022 20:15:35.636"
             P: "Original|FileName", "KString", "", "", "C:\Users\aap\Documents\3dsMax\export\ailab\pdp6_340.FBX"
             P: "LastSaved", "Compound", "", ""
             P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
             P: "LastSaved|ApplicationName", "KString", "", "", "3ds Max"
             P: "LastSaved|ApplicationVersion", "KString", "", "", "2012"
-            P: "LastSaved|DateTime_GMT", "DateTime", "", "", "29/01/2022 11:49:25.079"
+            P: "LastSaved|DateTime_GMT", "DateTime", "", "", "31/01/2022 20:15:35.636"
         }
     }
 }
@@ -72,7 +72,7 @@ GlobalSettings:  {
 
 Documents:  {
     Count: 1
-    Document: 1924238880, "", "Scene" {
+    Document: 1588842736, "", "Scene" {
         Properties70:  {
             P: "SourceObject", "object", "", ""
             P: "ActiveAnimStackName", "KString", "", "", ""
@@ -92,7 +92,7 @@ References:  {
 
 Definitions:  {
     Version: 100
-    Count: 103
+    Count: 104
     ObjectType: "GlobalSettings" {
         Count: 1
     }
@@ -223,7 +223,7 @@ Definitions:  {
         }
     }
     ObjectType: "Material" {
-        Count: 10
+        Count: 11
         PropertyTemplate: "KFbxSurfacePhong" {
             Properties70:  {
                 P: "ShadingModel", "KString", "", "", "Phong"
@@ -260,13 +260,13 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-    NodeAttribute: 1672047728, "NodeAttribute::", "Null" {
+    NodeAttribute: 1925304496, "NodeAttribute::", "Null" {
         Properties70:  {
             P: "Look", "enum", "", "",0
         }
         TypeFlags: "Null"
     }
-    Geometry: 1004191280, "Geometry::", "Mesh" {
+    Geometry: 1004189552, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -339,7 +339,7 @@ a: 0
             }
         }
     }
-    NodeAttribute: 1672051568, "NodeAttribute::", "Null" {
+    NodeAttribute: 1925305744, "NodeAttribute::", "Null" {
         Properties70:  {
             P: "Look", "enum", "", "",0
         }
@@ -405,7 +405,7 @@ a: 0
             }
         }
     }
-    Geometry: 1004187824, "Geometry::", "Mesh" {
+    Geometry: 1004192576, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.866666666666667,0.866666666666667,0.866666666666667
         }
@@ -465,13 +465,13 @@ a: 0
             }
         }
     }
-    NodeAttribute: 1672048592, "NodeAttribute::", "Null" {
+    NodeAttribute: 1925308624, "NodeAttribute::", "Null" {
         Properties70:  {
             P: "Look", "enum", "", "",0
         }
         TypeFlags: "Null"
     }
-    Geometry: 1004189984, "Geometry::", "Mesh" {
+    Geometry: 1004193008, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.690196078431373,0.101960784313725,0.101960784313725
         }
@@ -522,7 +522,7 @@ a: 1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,0,1,1,0,1
             MappingInformationType: "ByPolygon"
             ReferenceInformationType: "IndexToDirect"
             Materials: *44 {
-a: 0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a: 0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,2,2,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 } 
         }
         Layer: 0 {
@@ -545,7 +545,7 @@ a: 0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0
             }
         }
     }
-    Geometry: 1004192576, "Geometry::", "Mesh" {
+    Geometry: 779857264, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.333333333333333,0.109803921568627,0.694117647058824
         }
@@ -605,7 +605,7 @@ a: 0
             }
         }
     }
-    Geometry: 1004193440, "Geometry::", "Mesh" {
+    Geometry: 779857696, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.882352941176471,0.341176470588235,0.56078431372549
         }
@@ -684,7 +684,7 @@ a: 0
             }
         }
     }
-    Geometry: 779854672, "Geometry::", "Mesh" {
+    Geometry: 779855968, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.835294117647059,0.603921568627451,0.898039215686275
         }
@@ -766,7 +766,7 @@ a: 0
             }
         }
     }
-    Geometry: 779857696, "Geometry::", "Mesh" {
+    Geometry: 1675939840, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.835294117647059,0.603921568627451,0.898039215686275
         }
@@ -848,7 +848,7 @@ a: 0
             }
         }
     }
-    Geometry: 779857264, "Geometry::", "Mesh" {
+    Geometry: 1675940272, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.337254901960784,0.337254901960784,0.337254901960784
         }
@@ -936,7 +936,7 @@ a: 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
             }
         }
     }
-    Geometry: 779855104, "Geometry::", "Mesh" {
+    Geometry: 1675940704, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.584313725490196,0.694117647058824
         }
@@ -996,7 +996,7 @@ a: 0
             }
         }
     }
-    Geometry: 779855536, "Geometry::", "Mesh" {
+    Geometry: 1675938976, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.72156862745098,0.894117647058824,0.6
         }
@@ -1075,7 +1075,7 @@ a: 0
             }
         }
     }
-    Geometry: 779855968, "Geometry::", "Mesh" {
+    Geometry: 1675939408, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.894117647058824,0.6,0.72156862745098
         }
@@ -1148,7 +1148,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924663072, "Geometry::", "Mesh" {
+    Geometry: 1675941136, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -1221,7 +1221,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924662208, "Geometry::", "Mesh" {
+    Geometry: 1675941568, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.564705882352941,0.882352941176471
         }
@@ -1294,7 +1294,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924663504, "Geometry::", "Mesh" {
+    Geometry: 1675938544, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.450980392156863,0.450980392156863,0.450980392156863
         }
@@ -1381,7 +1381,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924662640, "Geometry::", "Mesh" {
+    Geometry: 1675942000, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -1454,7 +1454,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924664368, "Geometry::", "Mesh" {
+    Geometry: 1921401376, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.450980392156863,0.450980392156863,0.450980392156863
         }
@@ -1541,7 +1541,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924663936, "Geometry::", "Mesh" {
+    Geometry: 1921404400, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.564705882352941,0.882352941176471
         }
@@ -1614,7 +1614,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924664800, "Geometry::", "Mesh" {
+    Geometry: 1921401808, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.349019607843137,0.694117647058824
         }
@@ -1687,7 +1687,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924661344, "Geometry::", "Mesh" {
+    Geometry: 1921402240, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -1760,7 +1760,7 @@ a: 0
             }
         }
     }
-    Geometry: 1924661776, "Geometry::", "Mesh" {
+    Geometry: 1921402672, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.564705882352941,0.882352941176471
         }
@@ -1833,7 +1833,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918214240, "Geometry::", "Mesh" {
+    Geometry: 1921403968, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -1906,7 +1906,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918216832, "Geometry::", "Mesh" {
+    Geometry: 1921403104, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.450980392156863,0.450980392156863,0.450980392156863
         }
@@ -1993,7 +1993,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918217264, "Geometry::", "Mesh" {
+    Geometry: 1921403536, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.564705882352941,0.882352941176471
         }
@@ -2066,7 +2066,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918214672, "Geometry::", "Mesh" {
+    Geometry: 1921400944, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.349019607843137,0.694117647058824
         }
@@ -2139,13 +2139,13 @@ a: 0
             }
         }
     }
-    NodeAttribute: 1672056272, "NodeAttribute::", "Null" {
+    NodeAttribute: 1925316208, "NodeAttribute::", "Null" {
         Properties70:  {
             P: "Look", "enum", "", "",0
         }
         TypeFlags: "Null"
     }
-    Geometry: 1918215968, "Geometry::", "Mesh" {
+    Geometry: 1596483648, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.552941176470588,0.0274509803921569,0.227450980392157
         }
@@ -2218,7 +2218,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918216400, "Geometry::", "Mesh" {
+    Geometry: 1596484512, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.694117647058824,0.105882352941176
         }
@@ -2291,7 +2291,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918215104, "Geometry::", "Mesh" {
+    Geometry: 1596481056, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.450980392156863,0.450980392156863,0.450980392156863
         }
@@ -2378,7 +2378,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918215536, "Geometry::", "Mesh" {
+    Geometry: 1596481488, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -2451,13 +2451,13 @@ a: 0
             }
         }
     }
-    NodeAttribute: 1672058960, "NodeAttribute::", "Null" {
+    NodeAttribute: 1925314384, "NodeAttribute::", "Null" {
         Properties70:  {
             P: "Look", "enum", "", "",0
         }
         TypeFlags: "Null"
     }
-    Geometry: 1918217696, "Geometry::", "Mesh" {
+    Geometry: 1596484080, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.694117647058824,0.105882352941176
         }
@@ -2530,7 +2530,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918982784, "Geometry::", "Mesh" {
+    Geometry: 1596481920, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.552941176470588,0.0274509803921569,0.227450980392157
         }
@@ -2603,7 +2603,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918981056, "Geometry::", "Mesh" {
+    Geometry: 1596482352, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.450980392156863,0.450980392156863,0.450980392156863
         }
@@ -2689,7 +2689,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918983216, "Geometry::", "Mesh" {
+    Geometry: 1596482784, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.564705882352941,0.882352941176471
         }
@@ -2762,7 +2762,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918981920, "Geometry::", "Mesh" {
+    Geometry: 1596483216, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -2835,7 +2835,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918980192, "Geometry::", "Mesh" {
+    Geometry: 1678570432, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.450980392156863,0.450980392156863,0.450980392156863
         }
@@ -2921,7 +2921,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918983648, "Geometry::", "Mesh" {
+    Geometry: 1678570864, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.345098039215686,0.564705882352941,0.882352941176471
         }
@@ -2994,7 +2994,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918980624, "Geometry::", "Mesh" {
+    Geometry: 1678573024, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -3067,7 +3067,7 @@ a: 0
             }
         }
     }
-    Geometry: 1918981488, "Geometry::", "Mesh" {
+    Geometry: 1678571728, "Geometry::", "Mesh" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.749019607843137,0.749019607843137,0.749019607843137
         }
@@ -3140,7 +3140,7 @@ a: 0
             }
         }
     }
-    Model: 1927538336, "Model::Group004", "Null" {
+    Model: 2000543136, "Model::Group004", "Null" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3155,7 +3155,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927559696, "Model::plate_bot013", "Mesh" {
+    Model: 2000554528, "Model::plate_bot013", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3172,7 +3172,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927554000, "Model::table001", "Null" {
+    Model: 2000540288, "Model::table001", "Null" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3187,7 +3187,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927549728, "Model::tablepart001", "Mesh" {
+    Model: 2000537440, "Model::tablepart001", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3202,7 +3202,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927535488, "Model::table_middle001", "Mesh" {
+    Model: 2000530320, "Model::table_middle001", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3217,7 +3217,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927542608, "Model::Group003", "Null" {
+    Model: 2000550256, "Model::Group003", "Null" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3231,7 +3231,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927561120, "Model::Box070", "Mesh" {
+    Model: 2000531744, "Model::Box070", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3246,7 +3246,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927548304, "Model::Box072", "Mesh" {
+    Model: 2000533168, "Model::Box072", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3260,7 +3260,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927555424, "Model::Box073", "Mesh" {
+    Model: 1912716352, "Model::Box073", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3276,7 +3276,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927534064, "Model::Cylinder467", "Mesh" {
+    Model: 1912736288, "Model::Cylinder467", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3292,7 +3292,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927544032, "Model::Cylinder468", "Mesh" {
+    Model: 1912713504, "Model::Cylinder468", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3309,7 +3309,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927562544, "Model::Cone012", "Mesh" {
+    Model: 1912726320, "Model::Cone012", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3326,7 +3326,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927556848, "Model::Box071", "Mesh" {
+    Model: 1912717776, "Model::Box071", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3341,7 +3341,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927558272, "Model::Sphere001", "Mesh" {
+    Model: 1912737712, "Model::Sphere001", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3358,7 +3358,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 1927536912, "Model::extrus001", "Mesh" {
+    Model: 1912719200, "Model::extrus001", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3373,7 +3373,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055353472, "Model::plate_bot012", "Mesh" {
+    Model: 1912712080, "Model::plate_bot012", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3390,7 +3390,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055342080, "Model::door_r012", "Mesh" {
+    Model: 1912739136, "Model::door_r012", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3408,7 +3408,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055339232, "Model::axis_r030", "Mesh" {
+    Model: 1912720624, "Model::axis_r030", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3425,7 +3425,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055343504, "Model::plate_top017", "Mesh" {
+    Model: 1912709232, "Model::plate_top017", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3442,7 +3442,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055340656, "Model::axis_l030", "Mesh" {
+    Model: 1912722048, "Model::axis_l030", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3459,7 +3459,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055344928, "Model::door_l012", "Mesh" {
+    Model: 1912723472, "Model::door_l012", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3477,7 +3477,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055354896, "Model::Box077", "Mesh" {
+    Model: 1912733440, "Model::Box077", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3492,7 +3492,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055346352, "Model::plate_bot014", "Mesh" {
+    Model: 1912724896, "Model::plate_bot014", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3509,7 +3509,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055329264, "Model::door_r013", "Mesh" {
+    Model: 1912727744, "Model::door_r013", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3527,7 +3527,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055357744, "Model::plate_top018", "Mesh" {
+    Model: 1912710656, "Model::plate_top018", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3544,7 +3544,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055356320, "Model::axis_l031", "Mesh" {
+    Model: 1912729168, "Model::axis_l031", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3561,7 +3561,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055347776, "Model::door_l013", "Mesh" {
+    Model: 1912730592, "Model::door_l013", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3579,7 +3579,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055349200, "Model::Box078", "Mesh" {
+    Model: 1912741984, "Model::Box078", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3594,7 +3594,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055350624, "Model::side002", "Null" {
+    Model: 1912732016, "Model::side002", "Null" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3609,7 +3609,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055352048, "Model::Box079", "Mesh" {
+    Model: 1912734864, "Model::Box079", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3624,7 +3624,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055327840, "Model::C-Ext003", "Mesh" {
+    Model: 1912740560, "Model::C-Ext003", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3641,7 +3641,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055359168, "Model::axis_r031", "Mesh" {
+    Model: 1912743408, "Model::axis_r031", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3658,7 +3658,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055360592, "Model::frame002", "Mesh" {
+    Model: 1912744832, "Model::frame002", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3675,7 +3675,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055330688, "Model::side003", "Null" {
+    Model: 1912714928, "Model::side003", "Null" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3692,7 +3692,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055336384, "Model::C-Ext004", "Mesh" {
+    Model: 1912750528, "Model::C-Ext004", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3709,7 +3709,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055362016, "Model::Box080", "Mesh" {
+    Model: 1912763344, "Model::Box080", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3724,7 +3724,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055332112, "Model::axis_r032", "Mesh" {
+    Model: 1912774736, "Model::axis_r032", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3741,7 +3741,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055337808, "Model::door_l014", "Mesh" {
+    Model: 1912753376, "Model::door_l014", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3759,7 +3759,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055363440, "Model::Plane014", "Mesh" {
+    Model: 1912757648, "Model::Plane014", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3776,7 +3776,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055333536, "Model::axis_l032", "Mesh" {
+    Model: 1912770464, "Model::axis_l032", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3793,7 +3793,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055364864, "Model::door_r014", "Mesh" {
+    Model: 1912769040, "Model::door_r014", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3811,7 +3811,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055334960, "Model::plate_top019", "Mesh" {
+    Model: 1912771888, "Model::plate_top019", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3828,7 +3828,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Model: 2055384800, "Model::plate_top020", "Mesh" {
+    Model: 1912773312, "Model::plate_top020", "Mesh" {
         Version: 232
         Properties70:  {
             P: "InheritType", "enum", "", "",1
@@ -3845,7 +3845,7 @@ a: 0
         Shading: T
         Culling: "CullingOff"
     }
-    Material: 664257232, "Material::silver", "" {
+    Material: 1923377312, "Material::silver", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3867,7 +3867,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923381712, "Material::table", "" {
+    Material: 1923378512, "Material::table", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3889,7 +3889,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923388112, "Material::white", "" {
+    Material: 1923373712, "Material::white", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3911,7 +3911,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923384912, "Material::black", "" {
+    Material: 1923369712, "Material::black", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3933,7 +3933,29 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923385312, "Material::black", "" {
+    Material: 1923374912, "Material::orange", "" {
+        Version: 102
+        ShadingModel: "phong"
+        MultiLayer: 0
+        Properties70:  {
+            P: "ShadingModel", "KString", "", "", "phong"
+            P: "EmissiveFactor", "double", "Number", "",0
+            P: "AmbientColor", "ColorRGB", "Color", "",0.733333349227905,0.184313729405403,0.0156862754374743
+            P: "DiffuseColor", "ColorRGB", "Color", "",0.733333349227905,0.184313729405403,0.0156862754374743
+            P: "TransparentColor", "ColorRGB", "Color", "",1,1,1
+            P: "SpecularColor", "ColorRGB", "Color", "",0.899999976158142,0.899999976158142,0.899999976158142
+            P: "SpecularFactor", "double", "Number", "",0
+            P: "ShininessExponent", "double", "Number", "",2.0000000206574
+            P: "Emissive", "Vector3D", "Vector", "",0,0,0
+            P: "Ambient", "Vector3D", "Vector", "",0.733333349227905,0.184313729405403,0.0156862754374743
+            P: "Diffuse", "Vector3D", "Vector", "",0.733333349227905,0.184313729405403,0.0156862754374743
+            P: "Specular", "Vector3D", "Vector", "",0,0,0
+            P: "Shininess", "double", "Number", "",2.0000000206574
+            P: "Opacity", "double", "Number", "",1
+            P: "Reflectivity", "double", "Number", "",0
+        }
+    }
+    Material: 1923384112, "Material::black", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3955,7 +3977,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923370912, "Material::pitchblack", "" {
+    Material: 1923380112, "Material::pitchblack", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3977,7 +3999,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923374112, "Material::knob_red", "" {
+    Material: 1923379712, "Material::knob_red", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -3999,7 +4021,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923363712, "Material::blue", "" {
+    Material: 1923382112, "Material::blue", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -4021,7 +4043,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923376112, "Material::CRT", "" {
+    Material: 1923394512, "Material::CRT", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -4043,7 +4065,7 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    Material: 1923382912, "Material::white paint", "" {
+    Material: 1923396112, "Material::white paint", "" {
         Version: 102
         ShadingModel: "phong"
         MultiLayer: 0
@@ -4065,11 +4087,11 @@ a: 0
             P: "Reflectivity", "double", "Number", "",0
         }
     }
-    AnimationStack: 1914295040, "AnimStack::Take 001", "" {
+    AnimationStack: 2010240688, "AnimStack::Take 001", "" {
     }
-    AnimationLayer: 1581849568, "AnimLayer::BaseLayer", "" {
+    AnimationLayer: 2052133248, "AnimLayer::BaseLayer", "" {
     }
-    CollectionExclusive: 781564064, "DisplayLayer::console", "DisplayLayer" {
+    CollectionExclusive: 1966041760, "DisplayLayer::console", "DisplayLayer" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.109803921568627,0.584313725490196,0.694117647058824
             P: "Show", "bool", "", "",1
@@ -4077,7 +4099,7 @@ a: 0
             P: "LODBox", "bool", "", "",0
         }
     }
-    CollectionExclusive: 781563728, "DisplayLayer::test", "DisplayLayer" {
+    CollectionExclusive: 1966037952, "DisplayLayer::test", "DisplayLayer" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.0313725490196078,0.0313725490196078,0.533333333333333
             P: "Show", "bool", "", "",0
@@ -4085,7 +4107,7 @@ a: 0
             P: "LODBox", "bool", "", "",0
         }
     }
-    CollectionExclusive: 781559920, "DisplayLayer::print", "DisplayLayer" {
+    CollectionExclusive: 1966041648, "DisplayLayer::print", "DisplayLayer" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.56078431372549,0.882352941176471,0.341176470588235
             P: "Show", "bool", "", "",1
@@ -4093,7 +4115,7 @@ a: 0
             P: "LODBox", "bool", "", "",0
         }
     }
-    CollectionExclusive: 781565408, "DisplayLayer::ref", "DisplayLayer" {
+    CollectionExclusive: 1966044224, "DisplayLayer::ref", "DisplayLayer" {
         Properties70:  {
             P: "Color", "ColorRGB", "Color", "",0.0235294117647059,0.529411764705882,0.0235294117647059
             P: "Show", "bool", "", "",1
@@ -4109,427 +4131,430 @@ a: 0
 Connections:  {
     
     ;Model::Group004, Model::RootNode
-    C: "OO",1927538336,0
+    C: "OO",2000543136,0
     
     ;AnimLayer::BaseLayer, AnimStack::Take 001
-    C: "OO",1581849568,1914295040
+    C: "OO",2052133248,2010240688
     
     ;Model::plate_bot013, Model::Group004
-    C: "OO",1927559696,1927538336
+    C: "OO",2000554528,2000543136
     
     ;Model::table001, Model::Group004
-    C: "OO",1927554000,1927538336
+    C: "OO",2000540288,2000543136
     
     ;Model::Group003, Model::Group004
-    C: "OO",1927542608,1927538336
+    C: "OO",2000550256,2000543136
     
     ;Model::extrus001, Model::Group004
-    C: "OO",1927536912,1927538336
+    C: "OO",1912719200,2000543136
     
     ;Model::plate_bot012, Model::Group004
-    C: "OO",2055353472,1927538336
+    C: "OO",1912712080,2000543136
     
     ;Model::door_r012, Model::Group004
-    C: "OO",2055342080,1927538336
+    C: "OO",1912739136,2000543136
     
     ;Model::axis_r030, Model::Group004
-    C: "OO",2055339232,1927538336
+    C: "OO",1912720624,2000543136
     
     ;Model::plate_top017, Model::Group004
-    C: "OO",2055343504,1927538336
+    C: "OO",1912709232,2000543136
     
     ;Model::axis_l030, Model::Group004
-    C: "OO",2055340656,1927538336
+    C: "OO",1912722048,2000543136
     
     ;Model::door_l012, Model::Group004
-    C: "OO",2055344928,1927538336
+    C: "OO",1912723472,2000543136
     
     ;Model::Box077, Model::Group004
-    C: "OO",2055354896,1927538336
+    C: "OO",1912733440,2000543136
     
     ;Model::plate_bot014, Model::Group004
-    C: "OO",2055346352,1927538336
+    C: "OO",1912724896,2000543136
     
     ;Model::door_r013, Model::Group004
-    C: "OO",2055329264,1927538336
+    C: "OO",1912727744,2000543136
     
     ;Model::plate_top018, Model::Group004
-    C: "OO",2055357744,1927538336
+    C: "OO",1912710656,2000543136
     
     ;Model::axis_l031, Model::Group004
-    C: "OO",2055356320,1927538336
+    C: "OO",1912729168,2000543136
     
     ;Model::door_l013, Model::Group004
-    C: "OO",2055347776,1927538336
+    C: "OO",1912730592,2000543136
     
     ;Model::Box078, Model::Group004
-    C: "OO",2055349200,1927538336
+    C: "OO",1912741984,2000543136
     
     ;Model::side002, Model::Group004
-    C: "OO",2055350624,1927538336
+    C: "OO",1912732016,2000543136
     
     ;Model::axis_r031, Model::Group004
-    C: "OO",2055359168,1927538336
+    C: "OO",1912743408,2000543136
     
     ;Model::frame002, Model::Group004
-    C: "OO",2055360592,1927538336
+    C: "OO",1912744832,2000543136
     
     ;Model::side003, Model::Group004
-    C: "OO",2055330688,1927538336
+    C: "OO",1912714928,2000543136
     
     ;Model::axis_r032, Model::Group004
-    C: "OO",2055332112,1927538336
+    C: "OO",1912774736,2000543136
     
     ;Model::door_l014, Model::Group004
-    C: "OO",2055337808,1927538336
+    C: "OO",1912753376,2000543136
     
     ;Model::Plane014, Model::Group004
-    C: "OO",2055363440,1927538336
+    C: "OO",1912757648,2000543136
     
     ;Model::axis_l032, Model::Group004
-    C: "OO",2055333536,1927538336
+    C: "OO",1912770464,2000543136
     
     ;Model::door_r014, Model::Group004
-    C: "OO",2055364864,1927538336
+    C: "OO",1912769040,2000543136
     
     ;Model::plate_top019, Model::Group004
-    C: "OO",2055334960,1927538336
+    C: "OO",1912771888,2000543136
     
     ;Model::plate_top020, Model::Group004
-    C: "OO",2055384800,1927538336
+    C: "OO",1912773312,2000543136
     
     ;NodeAttribute::, Model::Group004
-    C: "OO",1672047728,1927538336
+    C: "OO",1925304496,2000543136
     
     ;Geometry::, Model::plate_bot013
-    C: "OO",1004191280,1927559696
+    C: "OO",1004189552,2000554528
     
     ;Material::silver, Model::plate_bot013
-    C: "OO",664257232,1927559696
+    C: "OO",1923377312,2000554528
     
     ;Model::tablepart001, Model::table001
-    C: "OO",1927549728,1927554000
+    C: "OO",2000537440,2000540288
     
     ;Model::table_middle001, Model::table001
-    C: "OO",1927535488,1927554000
+    C: "OO",2000530320,2000540288
     
     ;NodeAttribute::, Model::table001
-    C: "OO",1672051568,1927554000
+    C: "OO",1925305744,2000540288
     
     ;Geometry::, Model::tablepart001
-    C: "OO",1004192144,1927549728
+    C: "OO",1004192144,2000537440
     
     ;Material::table, Model::tablepart001
-    C: "OO",1923381712,1927549728
+    C: "OO",1923378512,2000537440
     
     ;Geometry::, Model::table_middle001
-    C: "OO",1004187824,1927535488
+    C: "OO",1004192576,2000530320
     
     ;Material::table, Model::table_middle001
-    C: "OO",1923381712,1927535488
+    C: "OO",1923378512,2000530320
     
     ;Model::Box070, Model::Group003
-    C: "OO",1927561120,1927542608
+    C: "OO",2000531744,2000550256
     
     ;Model::Box072, Model::Group003
-    C: "OO",1927548304,1927542608
+    C: "OO",2000533168,2000550256
     
     ;Model::Box073, Model::Group003
-    C: "OO",1927555424,1927542608
+    C: "OO",1912716352,2000550256
     
     ;Model::Cylinder467, Model::Group003
-    C: "OO",1927534064,1927542608
+    C: "OO",1912736288,2000550256
     
     ;Model::Cylinder468, Model::Group003
-    C: "OO",1927544032,1927542608
+    C: "OO",1912713504,2000550256
     
     ;Model::Cone012, Model::Group003
-    C: "OO",1927562544,1927542608
+    C: "OO",1912726320,2000550256
     
     ;Model::Box071, Model::Group003
-    C: "OO",1927556848,1927542608
+    C: "OO",1912717776,2000550256
     
     ;Model::Sphere001, Model::Group003
-    C: "OO",1927558272,1927542608
+    C: "OO",1912737712,2000550256
     
     ;NodeAttribute::, Model::Group003
-    C: "OO",1672048592,1927542608
+    C: "OO",1925308624,2000550256
     
     ;Geometry::, Model::Box070
-    C: "OO",1004189984,1927561120
+    C: "OO",1004193008,2000531744
     
     ;Material::white, Model::Box070
-    C: "OO",1923388112,1927561120
+    C: "OO",1923373712,2000531744
     
     ;Material::black, Model::Box070
-    C: "OO",1923384912,1927561120
+    C: "OO",1923369712,2000531744
+    
+    ;Material::orange, Model::Box070
+    C: "OO",1923374912,2000531744
     
     ;Geometry::, Model::Box072
-    C: "OO",1004192576,1927548304
+    C: "OO",779857264,2000533168
     
     ;Material::black, Model::Box072
-    C: "OO",1923385312,1927548304
+    C: "OO",1923384112,2000533168
     
     ;Geometry::, Model::Box073
-    C: "OO",1004193440,1927555424
+    C: "OO",779857696,1912716352
     
     ;Material::silver, Model::Box073
-    C: "OO",664257232,1927555424
+    C: "OO",1923377312,1912716352
     
     ;Geometry::, Model::Cylinder467
-    C: "OO",779854672,1927534064
+    C: "OO",779855968,1912736288
     
     ;Material::silver, Model::Cylinder467
-    C: "OO",664257232,1927534064
+    C: "OO",1923377312,1912736288
     
     ;Geometry::, Model::Cylinder468
-    C: "OO",779857696,1927544032
+    C: "OO",1675939840,1912713504
     
     ;Material::silver, Model::Cylinder468
-    C: "OO",664257232,1927544032
+    C: "OO",1923377312,1912713504
     
     ;Geometry::, Model::Cone012
-    C: "OO",779857264,1927562544
+    C: "OO",1675940272,1912726320
     
     ;Material::pitchblack, Model::Cone012
-    C: "OO",1923370912,1927562544
+    C: "OO",1923380112,1912726320
     
     ;Material::silver, Model::Cone012
-    C: "OO",664257232,1927562544
+    C: "OO",1923377312,1912726320
     
     ;Material::knob_red, Model::Cone012
-    C: "OO",1923374112,1927562544
+    C: "OO",1923379712,1912726320
     
     ;Geometry::, Model::Box071
-    C: "OO",779855104,1927556848
+    C: "OO",1675940704,1912717776
     
     ;Material::blue, Model::Box071
-    C: "OO",1923363712,1927556848
+    C: "OO",1923382112,1912717776
     
     ;Geometry::, Model::Sphere001
-    C: "OO",779855536,1927558272
+    C: "OO",1675938976,1912737712
     
     ;Material::CRT, Model::Sphere001
-    C: "OO",1923376112,1927558272
+    C: "OO",1923394512,1912737712
     
     ;Geometry::, Model::extrus001
-    C: "OO",779855968,1927536912
+    C: "OO",1675939408,1912719200
     
     ;Material::blue, Model::extrus001
-    C: "OO",1923363712,1927536912
+    C: "OO",1923382112,1912719200
     
     ;Geometry::, Model::plate_bot012
-    C: "OO",1924663072,2055353472
+    C: "OO",1675941136,1912712080
     
     ;Material::silver, Model::plate_bot012
-    C: "OO",664257232,2055353472
+    C: "OO",1923377312,1912712080
     
     ;Geometry::, Model::door_r012
-    C: "OO",1924662208,2055342080
+    C: "OO",1675941568,1912739136
     
     ;Material::blue, Model::door_r012
-    C: "OO",1923363712,2055342080
+    C: "OO",1923382112,1912739136
     
     ;Geometry::, Model::axis_r030
-    C: "OO",1924663504,2055339232
+    C: "OO",1675938544,1912720624
     
     ;Material::silver, Model::axis_r030
-    C: "OO",664257232,2055339232
+    C: "OO",1923377312,1912720624
     
     ;Geometry::, Model::plate_top017
-    C: "OO",1924662640,2055343504
+    C: "OO",1675942000,1912709232
     
     ;Material::silver, Model::plate_top017
-    C: "OO",664257232,2055343504
+    C: "OO",1923377312,1912709232
     
     ;Geometry::, Model::axis_l030
-    C: "OO",1924664368,2055340656
+    C: "OO",1921401376,1912722048
     
     ;Material::silver, Model::axis_l030
-    C: "OO",664257232,2055340656
+    C: "OO",1923377312,1912722048
     
     ;Geometry::, Model::door_l012
-    C: "OO",1924663936,2055344928
+    C: "OO",1921404400,1912723472
     
     ;Material::blue, Model::door_l012
-    C: "OO",1923363712,2055344928
+    C: "OO",1923382112,1912723472
     
     ;Geometry::, Model::Box077
-    C: "OO",1924664800,2055354896
+    C: "OO",1921401808,1912733440
     
     ;Material::blue, Model::Box077
-    C: "OO",1923363712,2055354896
+    C: "OO",1923382112,1912733440
     
     ;Geometry::, Model::plate_bot014
-    C: "OO",1924661344,2055346352
+    C: "OO",1921402240,1912724896
     
     ;Material::silver, Model::plate_bot014
-    C: "OO",664257232,2055346352
+    C: "OO",1923377312,1912724896
     
     ;Geometry::, Model::door_r013
-    C: "OO",1924661776,2055329264
+    C: "OO",1921402672,1912727744
     
     ;Material::blue, Model::door_r013
-    C: "OO",1923363712,2055329264
+    C: "OO",1923382112,1912727744
     
     ;Geometry::, Model::plate_top018
-    C: "OO",1918214240,2055357744
+    C: "OO",1921403968,1912710656
     
     ;Material::silver, Model::plate_top018
-    C: "OO",664257232,2055357744
+    C: "OO",1923377312,1912710656
     
     ;Geometry::, Model::axis_l031
-    C: "OO",1918216832,2055356320
+    C: "OO",1921403104,1912729168
     
     ;Material::silver, Model::axis_l031
-    C: "OO",664257232,2055356320
+    C: "OO",1923377312,1912729168
     
     ;Geometry::, Model::door_l013
-    C: "OO",1918217264,2055347776
+    C: "OO",1921403536,1912730592
     
     ;Material::blue, Model::door_l013
-    C: "OO",1923363712,2055347776
+    C: "OO",1923382112,1912730592
     
     ;Geometry::, Model::Box078
-    C: "OO",1918214672,2055349200
+    C: "OO",1921400944,1912741984
     
     ;Material::blue, Model::Box078
-    C: "OO",1923363712,2055349200
+    C: "OO",1923382112,1912741984
     
     ;Model::Box079, Model::side002
-    C: "OO",2055352048,2055350624
+    C: "OO",1912734864,1912732016
     
     ;Model::C-Ext003, Model::side002
-    C: "OO",2055327840,2055350624
+    C: "OO",1912740560,1912732016
     
     ;NodeAttribute::, Model::side002
-    C: "OO",1672056272,2055350624
+    C: "OO",1925316208,1912732016
     
     ;Geometry::, Model::Box079
-    C: "OO",1918215968,2055352048
+    C: "OO",1596483648,1912734864
     
-    ;Material::white paint, Model::Box079
-    C: "OO",1923382912,2055352048
+    ;Material::blue, Model::Box079
+    C: "OO",1923382112,1912734864
     
     ;Geometry::, Model::C-Ext003
-    C: "OO",1918216400,2055327840
+    C: "OO",1596484512,1912740560
     
     ;Material::white paint, Model::C-Ext003
-    C: "OO",1923382912,2055327840
+    C: "OO",1923396112,1912740560
     
     ;Geometry::, Model::axis_r031
-    C: "OO",1918215104,2055359168
+    C: "OO",1596481056,1912743408
     
     ;Material::silver, Model::axis_r031
-    C: "OO",664257232,2055359168
+    C: "OO",1923377312,1912743408
     
     ;Geometry::, Model::frame002
-    C: "OO",1918215536,2055360592
+    C: "OO",1596481488,1912744832
     
     ;Material::silver, Model::frame002
-    C: "OO",664257232,2055360592
+    C: "OO",1923377312,1912744832
     
     ;Model::C-Ext004, Model::side003
-    C: "OO",2055336384,2055330688
+    C: "OO",1912750528,1912714928
     
     ;Model::Box080, Model::side003
-    C: "OO",2055362016,2055330688
+    C: "OO",1912763344,1912714928
     
     ;NodeAttribute::, Model::side003
-    C: "OO",1672058960,2055330688
+    C: "OO",1925314384,1912714928
     
     ;Geometry::, Model::C-Ext004
-    C: "OO",1918217696,2055336384
+    C: "OO",1596484080,1912750528
     
     ;Material::white paint, Model::C-Ext004
-    C: "OO",1923382912,2055336384
+    C: "OO",1923396112,1912750528
     
     ;Geometry::, Model::Box080
-    C: "OO",1918982784,2055362016
+    C: "OO",1596481920,1912763344
     
-    ;Material::white paint, Model::Box080
-    C: "OO",1923382912,2055362016
+    ;Material::blue, Model::Box080
+    C: "OO",1923382112,1912763344
     
     ;Geometry::, Model::axis_r032
-    C: "OO",1918981056,2055332112
+    C: "OO",1596482352,1912774736
     
     ;Material::silver, Model::axis_r032
-    C: "OO",664257232,2055332112
+    C: "OO",1923377312,1912774736
     
     ;Geometry::, Model::door_l014
-    C: "OO",1918983216,2055337808
+    C: "OO",1596482784,1912753376
     
     ;Material::blue, Model::door_l014
-    C: "OO",1923363712,2055337808
+    C: "OO",1923382112,1912753376
     
     ;Geometry::, Model::Plane014
-    C: "OO",1918981920,2055363440
+    C: "OO",1596483216,1912757648
     
     ;Material::silver, Model::Plane014
-    C: "OO",664257232,2055363440
+    C: "OO",1923377312,1912757648
     
     ;Geometry::, Model::axis_l032
-    C: "OO",1918980192,2055333536
+    C: "OO",1678570432,1912770464
     
     ;Material::silver, Model::axis_l032
-    C: "OO",664257232,2055333536
+    C: "OO",1923377312,1912770464
     
     ;Geometry::, Model::door_r014
-    C: "OO",1918983648,2055364864
+    C: "OO",1678570864,1912769040
     
     ;Material::blue, Model::door_r014
-    C: "OO",1923363712,2055364864
+    C: "OO",1923382112,1912769040
     
     ;Geometry::, Model::plate_top019
-    C: "OO",1918980624,2055334960
+    C: "OO",1678573024,1912771888
     
     ;Material::silver, Model::plate_top019
-    C: "OO",664257232,2055334960
+    C: "OO",1923377312,1912771888
     
     ;Geometry::, Model::plate_top020
-    C: "OO",1918981488,2055384800
+    C: "OO",1678571728,1912773312
     
     ;Material::silver, Model::plate_top020
-    C: "OO",664257232,2055384800
+    C: "OO",1923377312,1912773312
     
     ;Model::Sphere001, DisplayLayer::console
-    C: "OO",1927558272,781564064
+    C: "OO",1912737712,1966041760
     
     ;Model::Box071, DisplayLayer::console
-    C: "OO",1927556848,781564064
+    C: "OO",1912717776,1966041760
     
     ;Model::Cone012, DisplayLayer::console
-    C: "OO",1927562544,781564064
+    C: "OO",1912726320,1966041760
     
     ;Model::Cylinder468, DisplayLayer::console
-    C: "OO",1927544032,781564064
+    C: "OO",1912713504,1966041760
     
     ;Model::Cylinder467, DisplayLayer::console
-    C: "OO",1927534064,781564064
+    C: "OO",1912736288,1966041760
     
     ;Model::Box073, DisplayLayer::console
-    C: "OO",1927555424,781564064
+    C: "OO",1912716352,1966041760
     
     ;Model::Box072, DisplayLayer::console
-    C: "OO",1927548304,781564064
+    C: "OO",2000533168,1966041760
     
     ;Model::Box070, DisplayLayer::console
-    C: "OO",1927561120,781564064
+    C: "OO",2000531744,1966041760
     
     ;Model::Group003, DisplayLayer::console
-    C: "OO",1927542608,781564064
+    C: "OO",2000550256,1966041760
     
     ;Model::table_middle001, DisplayLayer::console
-    C: "OO",1927535488,781564064
+    C: "OO",2000530320,1966041760
     
     ;Model::tablepart001, DisplayLayer::console
-    C: "OO",1927549728,781564064
+    C: "OO",2000537440,1966041760
     
     ;Model::table001, DisplayLayer::console
-    C: "OO",1927554000,781564064
+    C: "OO",2000540288,1966041760
     
     ;Model::Group004, DisplayLayer::console
-    C: "OO",1927538336,781564064
+    C: "OO",2000543136,1966041760
 }
 ;Takes section
 ;----------------------------------------------------
