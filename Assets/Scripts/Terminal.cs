@@ -9,16 +9,30 @@ public abstract class Terminal : MonoBehaviour
 {
 	public GameObject m_keyboard;
 	public Texture2D m_texture;
+	public Texture2D m_font;
 	public int m_width;
 	public int m_height;
-	public char[,] m_text;
+	public int m_char_width;
+	public int m_char_height;
+	public int m_cell_width;
+	public int m_cell_height;
+	public byte[,] m_text;
 	private bool updated = false;
+
+	// IAC = 255
+	// DO = 253
+	// WILL = 251
+	// IAC WILL 34 - linemode
+	// IAC WILL 3 - suppress go ahead
+	// IAC WILL 1 - echo
+	// IAC WILL 0 - binary transmission
+	// IAC DO 0
 
 	TcpClient socket;
 	NetworkStream stream;
 	byte[] recvBuf = new byte[16];
 	byte[] sendBuf = new byte[16];
-	int nBytesRead;
+	int pending = 0;
 
 	public void Clear(int width, int height)
 	{
@@ -31,33 +45,47 @@ public abstract class Terminal : MonoBehaviour
 
 		m_width = width;
 		m_height = height;
-		m_text = new char[m_width, m_height];
+		m_text = new byte[m_width, m_height];
 		updated = true;
 	}
 
-	public void Print(int x, int y, char c)
+	public void Print(int x, int y, byte c)
 	{
 		m_text[x, y] = c;
 		updated = true;
-
-		Color green = new Color(0x00, 0xFF, 0x00, 0xFF);
-		x = UnityEngine.Random.Range(0, m_texture.width);
-		y = UnityEngine.Random.Range(0, m_texture.height);
-		m_texture.SetPixel(x, y, green);
+		x = m_cell_width*x + 2;
+		y = m_cell_height*(m_height - 1 - y) + 2;
+		Graphics.CopyTexture(m_font, 0, 0, 0,
+			m_char_height*c, m_char_width, m_char_height,
+			m_texture, 0, 0, x, y);
 	}
 
 	public void Scroll()
-        {
+	{
 		for (int y = 0; y < m_height - 1; y++)
-			for (int x = 0; x < m_width; x++)
+			for (int x = 0; x < m_width; x++) {
 				m_text[x, y] = m_text[x, y+1];
+				Graphics.CopyTexture(m_font, 0, 0, 0,
+				m_char_height*m_text[x, y],
+				m_char_width, m_char_height,
+				m_texture, 0, 0,
+				m_cell_width*x + 2,
+				m_cell_height*(m_height - 1 - y) + 2);
+			}
+		ClearLine(0, m_height - 1);
 		updated = true;
-        }
+	}
 
 	public void ClearLine(int x, int y)
 	{
-		for (; x < m_width; x++)
-			m_text[x, y] = ' ';
+		for (; x < m_width; x++) {
+			m_text[x, y] = 32;
+			Graphics.CopyTexture(m_font, 0, 0, 0,
+			m_char_height*32, m_char_width, m_char_height,
+			m_texture, 0, 0,
+			m_cell_width*x + 2,
+			m_cell_height*(m_height - 1 - y) + 2);
+		}
 		updated = true;
 	}
 
@@ -71,6 +99,9 @@ public abstract class Terminal : MonoBehaviour
 
 	public void Paint()
 	{
+		if (pending > 0)
+			Pending();
+
 		if (updated)
 			m_texture.Apply();
 		updated = false;
@@ -84,6 +115,7 @@ public abstract class Terminal : MonoBehaviour
 		};
 		Debug.Log("Connecting to " + host);
 		socket.BeginConnect(host, port, ConnectCB, null);
+		pending = 0;
 	}
 
 	private void ConnectCB(IAsyncResult result)
@@ -94,7 +126,7 @@ public abstract class Terminal : MonoBehaviour
 
 		Debug.Log("Connected.");
 		stream = socket.GetStream();
-		stream.BeginRead(recvBuf, 0, 1, ReceiveCB, null);
+		stream.BeginRead(recvBuf, 0, 16, ReceiveCB, null);
 	}
 
 	private void ReceiveCB(IAsyncResult result)
@@ -103,21 +135,26 @@ public abstract class Terminal : MonoBehaviour
 		if(n <= 0)
 			return;
 
-		nBytesRead = n;
+		pending = n;
 		Debug.Log("Received: " + n);
+	}
 
-		for(int i = 0; i < n; i++)
+	private void Pending()
+	{
+		for(int i = 0; i < pending; i++)
 			Receive(recvBuf[i]);
+		pending = 0;
+		stream.BeginRead(recvBuf, 0, 16, ReceiveCB, null);
 	}
 
 	public abstract void Receive(byte data);
 
-        public void Send(byte data)
-        {
+	public void Send(byte data)
+	{
 		Debug.Log("Send: " + data);
 		sendBuf[0] = data;
 		stream.BeginWrite(sendBuf, 0, 1, SendCB, null);
-        }
+	}
 
 	private void SendCB(IAsyncResult result)
 	{

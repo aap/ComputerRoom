@@ -2891,9 +2891,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_keyboard: {fileID: 1067495064}
-  m_texture: {fileID: 2800000, guid: 88f47098638a4664aac8399317b2b057, type: 3}
+  m_texture: {fileID: 2800000, guid: 6e3160db6a248406f94e15b676c91616, type: 3}
+  m_font: {fileID: 2800000, guid: 1b5304362fc6df378b360d9deda1738b, type: 3}
   m_width: 0
   m_height: 0
+  m_char_width: 5
+  m_char_height: 7
+  m_cell_width: 7
+  m_cell_height: 12
 --- !u!1001 &1100668158
 PrefabInstance:
   m_ObjectHideFlags: 0
