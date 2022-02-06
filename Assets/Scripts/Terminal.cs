@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
+using UnityEngine.XR.Interaction.Toolkit;
 using System;
 using System.Net;
 using System.Net.Sockets;
 
 public abstract class Terminal : MonoBehaviour
 {
+	public string m_host;
+	public int m_port;
 	public GameObject m_keyboard;
 	public Texture2D m_texture;
 	public Texture2D m_font;
@@ -18,6 +23,22 @@ public abstract class Terminal : MonoBehaviour
 	public int m_cell_height;
 	public byte[,] m_text;
 	private bool updated = false;
+	// VR
+	public GameObject m_leftHand, m_rightHand;
+	public InputActionProperty m_keyDownL, m_keyDownR;
+	public InputActionProperty m_secKeyDownL, m_secKeyDownR;
+	protected bool ShiftDown;
+	protected bool CtrlDown;
+	protected XRRayInteractor leftHover;
+	protected XRRayInteractor rightHover;
+	public struct Key {
+		public GameObject key;
+		public int ascii, ascii_shift;
+		public int state;
+		public Key(GameObject k, int a, int ash) { key = k; ascii = a; ascii_shift = ash; state = 0; }
+	};
+	protected Key[] m_keys;
+
 
 	// IAC = 255
 	// DO = 253
@@ -126,7 +147,7 @@ public abstract class Terminal : MonoBehaviour
 
 		Debug.Log("Connected.");
 		stream = socket.GetStream();
-		stream.BeginRead(recvBuf, 0, 16, ReceiveCB, null);
+		stream.BeginRead(recvBuf, 0, 1, ReceiveCB, null);
 	}
 
 	private void ReceiveCB(IAsyncResult result)
@@ -144,7 +165,7 @@ public abstract class Terminal : MonoBehaviour
 		for(int i = 0; i < pending; i++)
 			Receive(recvBuf[i]);
 		pending = 0;
-		stream.BeginRead(recvBuf, 0, 16, ReceiveCB, null);
+		stream.BeginRead(recvBuf, 0, 1, ReceiveCB, null);
 	}
 
 	public abstract void Receive(byte data);
@@ -160,4 +181,75 @@ public abstract class Terminal : MonoBehaviour
 	{
 		stream.EndWrite(result);
 	}
+
+
+
+	/* the VR stuff */
+	protected void InitVRStuff()
+	{
+		leftHover = m_leftHand.GetComponent<XRRayInteractor>();
+		rightHover = m_rightHand.GetComponent<XRRayInteractor>();
+	}
+
+	public Transform FindChildByName(Transform obj, string name)
+	{
+		if(obj.name == name)
+			return obj;
+		for(int i = 0; i < obj.childCount; i++) {
+			Transform c = FindChildByName(obj.GetChild(i), name);
+			if(c != null)
+				return c;
+		}
+		return null;
+	}
+	// taken from Teletype35, hopefully it works here as well
+	public GameObject FindKey(string name)
+	{
+		GameObject obj = FindChildByName(m_keyboard.transform, name).gameObject;
+		// what a terrible hack:
+		// create parent just for box collider so it stays the same when the key is down
+		GameObject collobj = new GameObject(obj.name + "_coll");
+		collobj.transform.position = obj.transform.position;
+		collobj.transform.rotation = obj.transform.rotation;
+		collobj.transform.parent = obj.transform.parent;
+		obj.transform.parent = collobj.transform;
+		// and now it gets worse: create it on the child and copy so the dimensions are good
+		BoxCollider t = obj.AddComponent<BoxCollider>();
+		BoxCollider col = collobj.AddComponent<BoxCollider>();
+		// have to decrease height so we don't accidentally press other keys
+		col.center = t.center;
+		col.size = t.size;
+		Destroy(t);
+		float h = col.size.z/4.0f;
+		Vector3 v = col.center;
+		v.z += (col.size.z-h)/2.0f;
+		col.center = v;
+		v = col.size;
+		v.z = h;
+		col.size = v;
+
+		XRSimpleInteractable intact = collobj.AddComponent<XRSimpleInteractable>();
+		return collobj;
+	}
+
+	// taken from ActionBasedController
+	float m_ButtonPressPoint = 0.5f;
+        protected bool IsPressed(InputAction action)
+        {
+            if (action == null)
+                return false;
+
+#if INPUT_SYSTEM_1_1_OR_NEWER
+                return action.phase == InputActionPhase.Performed;
+#else
+            if (action.activeControl is ButtonControl buttonControl)
+                return buttonControl.isPressed;
+
+            if (action.activeControl is AxisControl)
+                return action.ReadValue<float>() >= m_ButtonPressPoint;
+
+            return action.triggered || action.phase == InputActionPhase.Performed;
+#endif
+        }
+
 }

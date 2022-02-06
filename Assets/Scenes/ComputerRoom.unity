@@ -701,7 +701,7 @@ Transform:
   m_GameObject: {fileID: 208331499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.049999997, y: 0.099999994, z: 0.099999994}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 726163038}
@@ -1380,15 +1380,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376298891}
-  m_LocalRotation: {x: -0, y: 0.50696737, z: -0, w: 0.86196524}
-  m_LocalPosition: {x: 0.475, y: 0, z: 1.49}
+  m_LocalRotation: {x: -0, y: -0.6873895, z: -0, w: 0.72628903}
+  m_LocalPosition: {x: -3.3448687, y: 0, z: -1.24684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 47477702}
   m_Father: {fileID: 0}
   m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 60.924, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -86.848, z: 0}
 --- !u!114 &376298895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,7 +1426,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -4051367594372023211, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_rotateSensitivity: 80
-  m_moveSensitivity: 0.05
+  m_moveSensitivity: 0.01
   m_head: {fileID: 1687258581}
   m_leftGrip:
     m_UseReference: 1
@@ -1476,6 +1476,11 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 8609166502638757966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!1 &400318884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -955846405364378313, guid: 467c34772d9ea77429d1e3efa51f4767, type: 3}
+  m_PrefabInstance: {fileID: 2034019152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &480387336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2868,11 +2873,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1656826758278ca4d80cc9d9fee10036, type: 3}
---- !u!1 &1067495064 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -955846405364378313, guid: 467c34772d9ea77429d1e3efa51f4767, type: 3}
-  m_PrefabInstance: {fileID: 2034019152}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1068131742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 467c34772d9ea77429d1e3efa51f4767, type: 3}
@@ -2885,12 +2885,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068131742}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c713f7965e7d5f5ad8d37993a560a1d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_keyboard: {fileID: 1067495064}
+  m_host: its.pdp10.se
+  m_port: 10003
+  m_keyboard: {fileID: 400318884}
   m_texture: {fileID: 2800000, guid: 6e3160db6a248406f94e15b676c91616, type: 3}
   m_font: {fileID: 2800000, guid: 1b5304362fc6df378b360d9deda1738b, type: 3}
   m_width: 0
@@ -2899,6 +2901,56 @@ MonoBehaviour:
   m_char_height: 7
   m_cell_width: 7
   m_cell_height: 12
+  m_leftHand: {fileID: 103772749}
+  m_rightHand: {fileID: 726163037}
+  m_keyDownL:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Key Down L
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: b676f300-30b2-4b59-a3e8-364f5faac402
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -2647785879580624030, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_keyDownR:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Key Down R
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 187da50a-1111-4104-8617-17bd101b7159
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4398136340383793851, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_secKeyDownL:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Sec Key Down L
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: eafedcad-2b16-413a-975c-169cf903a56c
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 1774526404258770215, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_secKeyDownR:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Sec Key Down R
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 0b0fd847-07ff-491a-8d50-14263b6589ec
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 8609166502638757966, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1001 &1100668158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3439,7 +3491,7 @@ Transform:
   m_GameObject: {fileID: 1459669827}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.049999997, y: 0.099999994, z: 0.099999994}
+  m_LocalScale: {x: 0.02, y: 0.02, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 103772750}

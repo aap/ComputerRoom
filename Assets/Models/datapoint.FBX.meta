@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: datapoint_key
+    second: {fileID: 2100000, guid: fab0433dd3747294a9be45898898da4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: datapoint_screen
     second: {fileID: 2100000, guid: f98143c60bf46e044aa3f441d8d730d3, type: 2}
   materials:
