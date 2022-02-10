@@ -2897,10 +2897,10 @@ MonoBehaviour:
   m_font: {fileID: 2800000, guid: 1b5304362fc6df378b360d9deda1738b, type: 3}
   m_width: 0
   m_height: 0
-  m_char_width: 5
-  m_char_height: 7
-  m_cell_width: 7
-  m_cell_height: 12
+  m_char_width: 12
+  m_char_height: 15
+  m_cell_width: 14
+  m_cell_height: 24
   m_leftHand: {fileID: 103772749}
   m_rightHand: {fileID: 726163037}
   m_keyDownL:
