@@ -40,16 +40,21 @@ public class Datapoint : Terminal
 			cursor_x &= -8;
 			break;
 		case 10:
-		case 11:
 			cursor_y++;
 			if (cursor_y >= 25)
 				Scroll();
+			break;
+		case 11:
+			cursor_y++;
 			break;
 		case 13:
 			cursor_x = 0;
 			break;
 		case 24:
 			cursor_x++;
+			break;
+		case 26:
+			cursor_y--;
 			break;
 		case 28:
 			cursor_x = 0;
